@@ -1,4 +1,4 @@
-import { BrandSchema } from '../models/brand.schema';
+import { BrandSchema } from '../schema/brand.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Module } from '@nestjs/common';
 import { BrandService } from './brand.service';

@@ -1,4 +1,4 @@
-import { CategorySchema } from './../models/category.schema';
+import { CategorySchema } from '../schema/category.schema';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Module } from '@nestjs/common';
 import { CategoryService } from './category.service';

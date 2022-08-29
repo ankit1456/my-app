@@ -16,5 +16,7 @@ export function createdocument(app: INestApplication): OpenAPIObject {
   }
   const options = builder.build();
 
-  return SwaggerModule.createDocument(app, options);
+  return SwaggerModule.createDocument(app, options, {
+    ignoreGlobalPrefix: false,
+  });
 }

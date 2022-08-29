@@ -7,8 +7,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   SwaggerModule.setup('api', app, createdocument(app));
-  const globalPrefix = 'api/v1';
-  app.setGlobalPrefix(globalPrefix);
+  // const globalPrefix = 'api/v1';
+  // app.setGlobalPrefix(globalPrefix);
   await app.listen(3000);
 }
 bootstrap();
